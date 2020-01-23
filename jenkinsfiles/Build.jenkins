@@ -13,6 +13,9 @@ pipeline {
     
     stages {
         stage('Back-end') {
+	    environment {
+                WORKSPACE = "C:\\Program Files(x86)\\Jenkins\\workspace\\backend_build"
+            }
             agent {
                 docker { image 'openjdk:8' }
             }
