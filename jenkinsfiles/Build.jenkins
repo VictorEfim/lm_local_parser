@@ -17,7 +17,7 @@ pipeline {
                 docker { image 'openjdk:8' }
             }
             steps {
-                sh 'bash ./gradlew bootJar'
+                sh './gradlew bootJar'
 		sh 'mv build/libs/process-management-0.0.1-SNAPSHOT.jar env.ARTIFACT_NAME'
             }
         }
