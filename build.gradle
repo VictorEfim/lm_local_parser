@@ -1,5 +1,5 @@
 plugins {
-    id 'java'
+    id "org.springframework.boot" version "2.1.0.RELEASE"
 }
 
 group 'com.LeroyMerlin'
